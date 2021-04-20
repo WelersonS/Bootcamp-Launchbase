@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@400;700&display=swap');
 
+:root {
+    --color-rocket: #7159c1; 
+}
+
 *  {
     margin: 0;
     padding: 0;
@@ -50,8 +54,8 @@ header {
 }
 
 #wrapper h1 {
-    font-size: 42px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 42px;
     font-weight: bold;
 }
 
@@ -64,4 +68,37 @@ header {
 
 #techs ul {
     margin-bottom: 70px;
+}
+
+/* --- CARDS --- */
+.cards {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--color-rocket);
+    cursor: pointer;
+    border-radius: 2% 12%;
+}
+
+.card__image-container img {
+    width: 100%;
+}
+
+.card__content,
+.card__info {
+    padding: 24px;
+}
+
+.card__info {
+    font-size: 12px;
+    line-height: 22px;
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: end;
 }
